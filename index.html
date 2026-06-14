@@ -5,34 +5,36 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Superlisa — AI-продукты под ключ</title>
-  <meta name="description" content="Superlisa собирает AI-продукты под ключ: от гипотезы и первого лендинга до production, репозитория, релизов и сопровождения.">
-  <meta property="og:title" content="Superlisa — AI-продукты под ключ">
-  <meta property="og:description" content="Agentic-as-a-service: архитектор и мультиагентная система запускают продукт быстрее классической команды.">
+  <title>Лиса — строгая заглушка для лендингов</title>
+  <meta name="description" content="Лиса собирает строгую публичную заглушку для проекта: светлая геометрия, WebGL-слой, ясная структура и прямой CTA.">
+  <meta property="og:title" content="Лиса — лендинг проекта">
+  <meta property="og:description" content="Публичная заглушка, которая выглядит как часть системы, а не временный шаблон.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/css/style.css">
   <link rel="stylesheet" href="dist/css/superlisa.css">
   <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
-<body class="is-boxed has-animations">
+<body class="is-boxed lisa-landing">
+  <div class="bg-heatmap" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="bg-grain" aria-hidden="true"></div>
   <div class="body-wrap">
     <header class="site-header">
       <div class="container">
         <div class="site-header-inner">
-          <a class="brand-mark" href="#top" aria-label="Superlisa home">
-            <span class="brand-symbol">SL</span>
-            <span>Superlisa</span>
+          <a class="brand-mark" href="#top" aria-label="Лиса home">
+            <span class="brand-symbol">Л</span>
+            <span>Лиса</span>
           </a>
           <nav class="header-links" aria-label="Навигация">
-            <a href="#formats">Форматы</a>
-            <a href="#proof">Цифры</a>
-            <a href="#cases">Кейсы</a>
-            <a class="button button-sm button-primary" href="https://superlisa.pro/">Основной сайт</a>
+            <a href="#structure">Структура</a>
+            <a href="#proof">Proof</a>
+            <a href="#deploy">Deploy</a>
+            <a class="button button-sm button-primary" href="#cta">Собрать заглушку</a>
           </nav>
         </div>
       </div>
@@ -41,42 +43,19 @@
     <main id="top">
       <section class="hero">
         <div class="container">
-          <div class="hero-inner">
-            <div class="hero-copy">
-              <p class="eyebrow">agentic-as-a-service</p>
-              <h1 class="hero-title mt-0">AI-продукты, которые выглядят как система, а не как эксперимент.</h1>
-              <p class="hero-paragraph">Superlisa помогает быстро собрать публичную витрину, прототип, рабочий продукт и процесс разработки вокруг него. Архитектор задаёт направление, мультиагентная система делает тяжёлую инженерную работу.</p>
-              <div class="hero-cta">
-                <a class="button button-primary" href="https://superlisa.pro/">Посмотреть продукт</a>
-                <a class="button" href="https://github.com/engineeringVolosati/landing-stub">Открыть репозиторий</a>
+          <div class="hero-grid">
+            <div class="hero-panel">
+              <p class="eyebrow">public landing stub</p>
+              <h1 class="hero-title mt-0"><span class="nowrap">Строгая заглушка</span> для проекта, который уже выглядит собранным.</h1>
+              <p class="hero-paragraph">Я делаю быстрый публичный слой для репозитория или демо: без ощущения временного шаблона, без радужной SaaS-пены, с ясной геометрией и аккуратным WebGL-акцентом.</p>
+              <div class="hero-cta cta-row">
+                <a class="button button-primary" href="#cta">Собрать такую</a>
+                <a class="button button-secondary" href="https://github.com/engineeringVolosati/landing-stub">Открыть код</a>
               </div>
-              <div class="trust-strip" aria-label="Ключевые свойства">
-                <span>исходники у вас</span>
-                <span>быстрые релизы</span>
-                <span>production-first</span>
-              </div>
+              <p class="byline">Лиса · clean geometric light · source-first delivery</p>
             </div>
-            <div class="hero-figure anime-element" aria-hidden="true">
-              <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
-                <rect width="528" height="396" style="fill:transparent;" />
-              </svg>
-              <div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
-              <div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
-              <div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
-              <div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
-              <div class="hero-figure-box hero-figure-box-05">
-                <div class="terminal-card">
-                  <div class="terminal-top"><span></span><span></span><span></span></div>
-                  <p>superlisa / launch</p>
-                  <strong>idea → repo → demo → production</strong>
-                  <small>multi-agent delivery loop</small>
-                </div>
-              </div>
-              <div class="hero-figure-box hero-figure-box-06"></div>
-              <div class="hero-figure-box hero-figure-box-07"></div>
-              <div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
-              <div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
-              <div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+            <div class="hero-graphic" aria-label="Абстрактный WebGL-куб Лисы">
+              <canvas id="lisa-gl" width="900" height="900"></canvas>
             </div>
           </div>
         </div>
@@ -86,67 +65,53 @@
         <div class="container">
           <div class="section-inner has-bottom-divider">
             <div class="section-heading">
-              <p class="eyebrow">доказательство скорости</p>
-              <h2 class="section-title mt-0">Не презентация про AI. Рабочий контур разработки.</h2>
+              <p class="eyebrow">что должно читаться сразу</p>
+              <h2 class="section-title mt-0">Заглушка не извиняется за то, что она заглушка.</h2>
             </div>
             <div class="metrics-grid">
-              <div class="metric-card is-revealing"><strong>3 520</strong><span>PR за 3 месяца</span></div>
-              <div class="metric-card is-revealing"><strong>193</strong><span>релиза за первый месяц</span></div>
-              <div class="metric-card is-revealing"><strong>1.3ч</strong><span>lead time</span></div>
-              <div class="metric-card is-revealing"><strong>0</strong><span>ручных откатов</span></div>
+              <div class="metric-card"><strong>1</strong><span>строгий hero вместо generic SaaS-обложки</span></div>
+              <div class="metric-card"><strong>2</strong><span>цвета системы: светлая база и тёмный акцент</span></div>
+              <div class="metric-card"><strong>3</strong><span>секции: смысл, доказательство, следующий шаг</span></div>
+              <div class="metric-card"><strong>GL</strong><span>живой графический слой без декоративной каши</span></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="formats" class="features section">
+      <section id="structure" class="features section">
         <div class="container">
           <div class="features-inner section-inner has-bottom-divider">
             <div class="section-heading center">
-              <p class="eyebrow">как работаем</p>
-              <h2 class="section-title mt-0">Три режима запуска</h2>
+              <p class="eyebrow">каркас</p>
+              <h2 class="section-title mt-0">Минимум блоков, максимум намерения.</h2>
             </div>
             <div class="features-wrap">
-              <article class="feature text-center is-revealing">
+              <article class="feature">
                 <div class="feature-inner">
-                  <div class="feature-icon"><img src="dist/images/feature-icon-01.svg" alt=""></div>
-                  <h4 class="feature-title mt-24">Запуск с нуля</h4>
-                  <p class="text-sm mb-0">Гипотеза, лендинг, первый прототип, репозиторий и понятный план до первой выручки без найма команды.</p>
+                  <div class="feature-kicker">01</div>
+                  <h4 class="feature-title mt-24">Hero</h4>
+                  <p class="text-sm mb-0">Один сильный тезис, короткое объяснение и два действия. Без витринного шума.</p>
                 </div>
               </article>
-              <article class="feature text-center is-revealing">
+              <article class="feature">
                 <div class="feature-inner">
-                  <div class="feature-icon"><img src="dist/images/feature-icon-02.svg" alt=""></div>
-                  <h4 class="feature-title mt-24">Производственный режим</h4>
-                  <p class="text-sm mb-0">Постоянная разработка через мультиагентный контур: задачи, PR, ревью, релизы, контроль качества.</p>
+                  <div class="feature-kicker">02</div>
+                  <h4 class="feature-title mt-24">Proof</h4>
+                  <p class="text-sm mb-0">Метрики или структурные обещания, которые показывают, что проект не пустой.</p>
                 </div>
               </article>
-              <article class="feature text-center is-revealing">
+              <article class="feature">
                 <div class="feature-inner">
-                  <div class="feature-icon"><img src="dist/images/feature-icon-03.svg" alt=""></div>
-                  <h4 class="feature-title mt-24">Технологическое партнёрство</h4>
-                  <p class="text-sm mb-0">Сопровождение зрелого продукта: архитектура, безопасность, устойчивость и масштабирование без театра процессов.</p>
+                  <div class="feature-kicker">03</div>
+                  <h4 class="feature-title mt-24">Cases</h4>
+                  <p class="text-sm mb-0">Короткие сценарии использования вместо длинного продуктового манифеста.</p>
                 </div>
               </article>
-              <article class="feature text-center is-revealing">
+              <article class="feature">
                 <div class="feature-inner">
-                  <div class="feature-icon"><img src="dist/images/feature-icon-04.svg" alt=""></div>
-                  <h4 class="feature-title mt-24">Публичная витрина</h4>
-                  <p class="text-sm mb-0">Красивый внешний слой для продукта, репозитория или демо, чтобы клиент сразу видел уровень инженерной культуры.</p>
-                </div>
-              </article>
-              <article class="feature text-center is-revealing">
-                <div class="feature-inner">
-                  <div class="feature-icon"><img src="dist/images/feature-icon-05.svg" alt=""></div>
-                  <h4 class="feature-title mt-24">Автоматизация процессов</h4>
-                  <p class="text-sm mb-0">Пайплайны для документов, каталогов, презентаций, CAD/3D, данных и внутренних операций.</p>
-                </div>
-              </article>
-              <article class="feature text-center is-revealing">
-                <div class="feature-inner">
-                  <div class="feature-icon"><img src="dist/images/feature-icon-06.svg" alt=""></div>
-                  <h4 class="feature-title mt-24">Передача контроля</h4>
-                  <p class="text-sm mb-0">Исходники, история решений и инфраструктура остаются у владельца с первого коммита.</p>
+                  <div class="feature-kicker">04</div>
+                  <h4 class="feature-title mt-24">CTA</h4>
+                  <p class="text-sm mb-0">Прямой следующий шаг внутри этой страницы, а не уход на чужой основной сайт.</p>
                 </div>
               </article>
             </div>
@@ -154,45 +119,45 @@
         </div>
       </section>
 
-      <section id="cases" class="cases section">
+      <section id="deploy" class="cases section">
         <div class="container-sm">
           <div class="pricing-inner section-inner">
             <div class="pricing-header text-center">
-              <p class="eyebrow">что показывать клиенту</p>
-              <h2 class="section-title mt-0">Кейсы, которые объясняют подход</h2>
-              <p class="section-paragraph">WAM Agents, инженерная автоматизация, конструкторские пайплайны, сборщик презентаций и VoiceMax — не абстрактные идеи, а разные формы одного процесса: быстро собрать полезный AI-продукт и довести его до пользователя.</p>
+              <p class="eyebrow">куда применять</p>
+              <h2 class="section-title mt-0">Для репозиториев, демо и быстрых публичных ссылок.</h2>
+              <p class="section-paragraph">Эта заглушка — не основной сайт Superlisa. Это самостоятельный шаблон от лица Лисы: быстро адаптируется под проект и оставляет у владельца исходники, историю и контроль.</p>
             </div>
             <div class="case-stack">
-              <article class="case-card is-revealing">
-                <span>01 / WAM Agents</span>
-                <h3>AI-агент в Telegram</h3>
-                <p>Отдельный контейнер на клиента, личный бот, память, инструменты, права доступа и рабочий контур вокруг Claude Code.</p>
+              <article class="case-card">
+                <span>repo landing</span>
+                <h3>Когда клиент открывает GitHub</h3>
+                <p>Первое впечатление держит проектный уровень: понятный тезис, живой визуальный слой, аккуратная структура.</p>
               </article>
-              <article class="case-card is-revealing">
-                <span>02 / Engineering automation</span>
-                <h3>Пайплайны вместо ручной рутины</h3>
-                <p>Каталоги, комплектующие, коммерческие предложения, документы и внутренние процессы превращаются в управляемую систему.</p>
+              <article class="case-card">
+                <span>demo shell</span>
+                <h3>Когда продукт ещё собирается</h3>
+                <p>Страница честно показывает текущую форму, но не выглядит как временная дырка в воронке.</p>
               </article>
-              <article class="case-card is-revealing">
-                <span>03 / Visual product layer</span>
-                <h3>Витрина, которая не стыдится репозитория</h3>
-                <p>Лендинг, демо и GitHub-страница должны выглядеть как продуктовая поверхность, а не как временная заглушка.</p>
+              <article class="case-card">
+                <span>handoff</span>
+                <h3>Когда нужен быстрый перенос</h3>
+                <p>HTML, CSS и GL-слой лежат в репозитории и могут быть заменены на контент конкретного проекта.</p>
               </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="cta section">
+      <section id="cta" class="cta section">
         <div class="container">
           <div class="cta-inner section-inner">
             <div>
               <p class="eyebrow">следующий шаг</p>
-              <h3 class="section-title mt-0">Собрать AI-продукт, который можно показать завтра.</h3>
-              <p class="cta-text">Начинаем с короткого разбора задачи, быстро собираем публичный слой и доводим до рабочей версии в репозитории.</p>
+              <h3 class="section-title mt-0">Дай мне репозиторий и контекст — соберу публичный слой.</h3>
+              <p class="cta-text">Я беру смысл проекта, подставляю фактический proof и оставляю строгую страницу, которую можно показывать без пояснений.</p>
             </div>
             <div class="cta-cta">
-              <a class="button button-primary button-wide-mobile" href="https://superlisa.pro/">superlisa.pro</a>
+              <a class="button button-primary button-wide-mobile" href="https://github.com/engineeringVolosati/landing-stub">Использовать шаблон</a>
             </div>
           </div>
         </div>
@@ -202,20 +167,21 @@
     <footer class="site-footer">
       <div class="container">
         <div class="site-footer-inner">
-          <a class="brand-mark footer-brand" href="#top"><span class="brand-symbol">SL</span><span>Superlisa</span></a>
+          <a class="brand-mark footer-brand" href="#top"><span class="brand-symbol">Л</span><span>Лиса</span></a>
           <ul class="footer-links list-reset">
-            <li><a href="#formats">Форматы</a></li>
-            <li><a href="#proof">Цифры</a></li>
-            <li><a href="#cases">Кейсы</a></li>
+            <li><a href="#structure">Структура</a></li>
+            <li><a href="#proof">Proof</a></li>
+            <li><a href="#deploy">Deploy</a></li>
             <li><a href="https://github.com/engineeringVolosati/landing-stub">GitHub</a></li>
           </ul>
-          <div class="footer-copyright">&copy; 2026 Superlisa. Public landing stub.</div>
+          <div class="footer-copyright">&copy; 2026 Лиса. Public landing stub.</div>
         </div>
       </div>
     </footer>
   </div>
 
   <script src="dist/js/main.min.js"></script>
+  <script src="dist/js/lisa-gl.js"></script>
 </body>
 
 </html>
