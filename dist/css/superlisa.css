@@ -6,6 +6,10 @@
   --c-muted: #5E646C;
   --c-line: #B8BBC0;
   --c-accent: #2C4A6F;
+  --c-button-primary: #14161A;
+  --c-button-primary-hover: #2A2D33;
+  --c-button-secondary: #F6F7F8;
+  --c-button-secondary-hover: #ECEEF1;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
   --font-mark: "Archivo Black", "Inter", sans-serif;
@@ -139,6 +143,16 @@ main,
   gap: 22px;
 }
 
+.button-sm {
+  min-height: 36px;
+  padding: 10px 18px;
+  border-radius: 9px;
+}
+
+.button-wide-mobile {
+  border-radius: 10px;
+}
+
 .header-links a:not(.button) {
   color: var(--c-muted);
   font: 600 13px/1 var(--font-mono);
@@ -155,32 +169,61 @@ main,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 0;
-  border-radius: 16px;
+  border: 1px solid rgba(20, 22, 26, 0.2);
+  border-radius: 10px;
   padding: 14px 22px;
-  background: rgba(251, 252, 253, 0.64);
+  background: var(--c-button-secondary);
+  background-image: none;
   color: var(--c-text) !important;
   font: 600 17px/1 var(--font-body);
   text-decoration: none;
   box-shadow: none;
-  backdrop-filter: blur(20px) saturate(160%);
-  transition: background 600ms ease, color 600ms ease, transform 600ms ease;
+  backdrop-filter: none;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.button::before,
+.button::after {
+  display: none;
 }
 
 .button:hover {
-  background: rgba(251, 252, 253, 0.88);
+  background: var(--c-button-secondary-hover);
+  background-image: none;
+  border-color: rgba(20, 22, 26, 0.32);
   color: var(--c-text) !important;
   transform: translateY(-1px);
 }
 
 .button-primary,
-.button-primary:hover {
-  background: rgba(20, 22, 26, 0.86);
+.button-primary:hover,
+.button-primary:focus,
+.button-primary:active {
+  background: var(--c-button-primary);
+  background-image: none;
+  border-color: var(--c-button-primary);
   color: var(--c-card) !important;
 }
 
-.button-secondary {
-  background: rgba(251, 252, 253, 0.62);
+.button-primary:hover {
+  background: var(--c-button-primary-hover);
+  background-image: none;
+  border-color: var(--c-button-primary-hover);
+}
+
+.button-secondary,
+.button-secondary:hover,
+.button-secondary:focus,
+.button-secondary:active {
+  background: var(--c-button-secondary);
+  background-image: none;
+  border-color: rgba(20, 22, 26, 0.22);
+  color: var(--c-text) !important;
+}
+
+.button-secondary:hover {
+  background: var(--c-button-secondary-hover);
+  background-image: none;
 }
 
 .hero {
@@ -503,5 +546,9 @@ h6,
 
   .button {
     width: 100%;
+  }
+
+  .button-wide-mobile {
+    max-width: none;
   }
 }
