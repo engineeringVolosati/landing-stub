@@ -162,3 +162,18 @@ Substeps:
 
 - Created this file as the single recovery entrypoint for the GL jelly task.
 - Next session should start with Block A and decompose further if it crashes inside a block.
+
+### 2026-06-14 — Block A inspected
+
+- Read `dist/js/lisa-gl.js`, `index.html`, and `dist/css/superlisa.css` only, per protocol.
+- Current dirty `dist/js/lisa-gl.js` already has 30 looped parts, 5 shape branches (`box`, `capsule`, `ring`, connector cutout, `triangle`), strict colors, and deterministic motion.
+- Decision: replace the current draft structure instead of polishing it. Reason: it is a dense fragment-shader-only implementation with no explicit part vocabulary or layout array, so it is hard to continue safely after resets and hard to tune visually.
+- Next block must start by decomposing Block B/C together into a simple maintainable JavaScript data model: `PART_TYPES`, `LAYOUT`, `PALETTE`, `motionFor(part, time)`, then render from that model. If WebGL remains shader-based, JS should still own the declarative layout and generate uniforms/attributes rather than hiding all structure inside shader branches.
+
+#### Next decomposition before code
+
+1. Define `PALETTE` with strict colors in JS comments or constants.
+2. Define `PART_TYPES` as 5 named types: block, plate, pin, ring, connector.
+3. Define `LAYOUT` as ~30 entries with `type`, `cluster`, `x`, `y`, `scale`, `rotation`, `depth`, `tone`.
+4. Define motion parameters per cluster: core, rib, satellite.
+5. Only then rewrite `dist/js/lisa-gl.js`.
